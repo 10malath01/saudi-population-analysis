@@ -1,8 +1,22 @@
 # Saudi Arabia Population Analysis
 
-## Project topic
+## Team Information
 
-**English:** Population distribution by administrative region and gender in Saudi Arabia, 2010–2024.
+| Student | Student ID |
+|---|---:|
+| Yara Muhammad Al Muzhar | 448815896 |
+| Maram Al-sunaidi | 448815727 |
+| Thikra Ali Alshahrani | 448815965 |
+| Yomn Ali Alsultan | 448816841 |
+
+**Course:** Practical Data Science  
+**Instructor:** Anado Havli
+
+## Project Title
+
+**Population Distribution by Administrative Region and Gender in Saudi Arabia (2010–2024)**
+
+
 
 ## Colab URL:
 https://colab.research.google.com/drive/1ph_2EFaICLdLwsbbVeSt3sclAEjrUNdz?usp=sharing
