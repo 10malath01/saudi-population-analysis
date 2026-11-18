@@ -27,7 +27,6 @@ The source page is:
 ## Project files
 
 - `notebooks/saudi_population_analysis.ipynb`: complete Jupyter/Colab notebook.
-- `analysis.py`: same analysis as a Python script.
 - `requirements.txt`: required Python packages.
 - `data/`: downloaded and cleaned data will be saved here after execution.
 - `outputs/`: aggregated CSV files, a JSON summary, and three figures will be saved here after execution.
