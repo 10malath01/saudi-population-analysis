@@ -25,7 +25,7 @@ An exploratory data science project examining Saudi Arabia’s mid-year populati
 
 ### Proposed Contribution Allocation — Pending Team Confirmation
 
-The following responsibilities are a proposed division based on the project workflow. Each team member should confirm or amend this record so that it reflects the actual work completed.
+The following responsibilities are a division based on the project workflow. Each team member should confirm or amend this record so that it reflects the actual work completed.
 
 | Student | Proposed responsibilities |
 |---|---|
