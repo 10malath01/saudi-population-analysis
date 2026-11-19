@@ -1,6 +1,20 @@
 # Saudi Arabia Population Analysis
 
-## Team Information
+An exploratory data science project examining Saudi Arabia’s mid-year population estimates by gender and administrative region from 2010 to 2024.
+
+**GitHub repository:** https://github.com/10malath01/saudi-population-analysis/  
+**Google Colab notebook:** https://colab.research.google.com/drive/1ph_2EFaICLdLwsbbVeSt3sclAEjrUNdz?usp=sharing
+
+---
+
+## Project Information
+
+- **Project title:** Population Distribution by Administrative Region and Gender in Saudi Arabia (2010–2024)
+- **Course:** Practical Data Science
+- **Course code:** 2323 CIS
+- **Instructor:** Anado Havli
+
+## Team
 
 | Student | Student ID |
 |---|---:|
@@ -9,59 +23,59 @@
 | Thikra Ali Alshahrani | 448815965 |
 | Yomn Ali Alsultan | 448816841 |
 
-**Course:** Practical Data Science  
-**Instructor:** Anado Havli
+### Proposed Contribution Allocation — Pending Team Confirmation
 
-## Project Title
+The following responsibilities are a proposed division based on the project workflow. Each team member should confirm or amend this record so that it reflects the actual work completed.
 
-**Population Distribution by Administrative Region and Gender in Saudi Arabia (2010–2024)**
+| Student | Proposed responsibilities |
+|---|---|
+| Yara Muhammad Al Muzhar | Project planning; defining the research question and objective; identifying and documenting the dataset source. |
+| Maram Al-sunaidi | Downloading and inspecting the data; reviewing its structure and quality; cleaning and preparing the analytical dataset. |
+| Thikra Ali Alshahrani | Transforming and aggregating the cleaned data; preparing summary tables; creating and interpreting the visualizations. |
+| Yomn Ali Alsultan | Organizing the notebook and project files; documenting the workflow and requirements; preparing the GitHub repository; coordinating the final review and presentation. |
 
+---
 
-
-## Colab URL:
-https://colab.research.google.com/drive/1ph_2EFaICLdLwsbbVeSt3sclAEjrUNdz?usp=sharing
-
-
-## Data question
+## Research Question
 
 How has the estimated population changed by gender over time, and how do Saudi administrative regions compare in the latest available year?
 
-## Dataset
+## Project Objective
 
-The project uses the **Population by Administrative Region and Gender** dataset from the KAPSARC Data Portal. The portal identifies the creator as the **Saudi Central Bank (SAMA)**, country as Saudi Arabia, and coverage as 2010–2024. The values are mid-year population estimates.
+The objective is to prepare population data, describe national trends and regional differences, and communicate the findings through summary tables, visualizations, and a reproducible Python notebook.
 
-Direct download URL used by the notebook:
+This is a descriptive analysis. It summarizes patterns in the published estimates; it does not determine the causes of population changes.
 
-`https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/saudi-arabia-population-by-administrative-region-nationality-and-sex/exports/csv?lang=en&timezone=UTC`
+---
 
-The source page is:
+## Dataset and Source
 
-`https://datasource.kapsarc.org/explore/assets/saudi-arabia-population-by-administrative-region-nationality-and-sex/`
+The project uses the **Population by Administrative Region, Nationality and Sex** dataset available from the KAPSARC Data Portal. The portal identifies the Saudi Central Bank (SAMA) as the dataset creator. The dataset covers 2010–2024, reports values in persons, and describes them as mid-year estimates based on the Demographic Research Bulletin 2016.
 
-## Project files
+- **Dataset page:** https://datasource.kapsarc.org/explore/assets/saudi-arabia-population-by-administrative-region-nationality-and-sex/
+- **CSV export endpoint used by the notebook:**
 
-- `notebooks/saudi_population_analysis.ipynb`: complete Jupyter/Colab notebook.
-- `requirements.txt`: required Python packages.
-- `data/`: downloaded and cleaned data will be saved here after execution.
-- `outputs/`: aggregated CSV files, a JSON summary, and three figures will be saved here after execution.
+  `https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/saudi-arabia-population-by-administrative-region-nationality-and-sex/exports/csv?lang=en&timezone=UTC`
 
+The analysis focuses on year, region, gender, and population. The project does not analyze nationality.
 
-## Cleaning and transformation performed
+---
 
-The code selects the analytical columns, renames them, converts year and population to numeric types, trims text values, removes missing or invalid population records, removes duplicates, and sorts the data. It then creates three aggregated outputs: trend by gender and year, latest-year totals by region, and latest-year gender shares by region.
+## Project Structure
 
-## Visualizations
-
-1. National population trend by gender.
-2. Population comparison across administrative regions in the latest available year.
-3. Gender composition percentage by region in the latest available year.
-
-## Important limitation
-
-These are population estimates. The analysis is descriptive and shows trends and differences; it does not prove that gender or region causes population changes.
-
-## Citation
-
-For this project, We cite the data source as:
-
-> Saudi Central Bank (SAMA), *Population by Administrative Region and Gender*, accessed through the KAPSARC Data Portal, 2010–2024. https://datasource.kapsarc.org/explore/assets/saudi-arabia-population-by-administrative-region-nationality-and-sex/
+```text
+saudi-population-analysis/
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── README.md
+│   └── ... cleaned project data
+├── notebooks/
+│   └── saudi_population_analysis.ipynb
+└── outputs/
+    ├── README.md
+    ├── ... summary tables and analysis outputs
+    └── figures/
+        ├── 01_population_trend_by_gender.png
+        ├── 02_population_by_region_latest_year.png
+        └── 03_gender_composition_by_region.png
